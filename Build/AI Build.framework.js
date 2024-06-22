@@ -1994,13 +1994,13 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  4057952: function() {return Module.webglContextAttributes.premultipliedAlpha;},  
- 4058013: function() {return Module.webglContextAttributes.preserveDrawingBuffer;},  
- 4058077: function() {return Module.webglContextAttributes.powerPreference;},  
- 4058135: function() {Module['emscripten_get_now_backup'] = performance.now;},  
- 4058190: function($0) {performance.now = function() { return $0; };},  
+  4058000: function() {return Module.webglContextAttributes.premultipliedAlpha;},  
+ 4058061: function() {return Module.webglContextAttributes.preserveDrawingBuffer;},  
+ 4058125: function() {return Module.webglContextAttributes.powerPreference;},  
+ 4058183: function() {Module['emscripten_get_now_backup'] = performance.now;},  
  4058238: function($0) {performance.now = function() { return $0; };},  
- 4058286: function() {performance.now = Module['emscripten_get_now_backup'];}
+ 4058286: function($0) {performance.now = function() { return $0; };},  
+ 4058334: function() {performance.now = Module['emscripten_get_now_backup'];}
 };
 
 
@@ -16636,6 +16636,9 @@ var dynCall_fiii = Module["dynCall_fiii"] = createExportWrapper("dynCall_fiii");
 var dynCall_iiiifi = Module["dynCall_iiiifi"] = createExportWrapper("dynCall_iiiifi");
 
 /** @type {function(...*):?} */
+var dynCall_viiiifii = Module["dynCall_viiiifii"] = createExportWrapper("dynCall_viiiifii");
+
+/** @type {function(...*):?} */
 var dynCall_fffi = Module["dynCall_fffi"] = createExportWrapper("dynCall_fffi");
 
 /** @type {function(...*):?} */
@@ -16655,9 +16658,6 @@ var dynCall_viiiifi = Module["dynCall_viiiifi"] = createExportWrapper("dynCall_v
 
 /** @type {function(...*):?} */
 var dynCall_iifi = Module["dynCall_iifi"] = createExportWrapper("dynCall_iifi");
-
-/** @type {function(...*):?} */
-var dynCall_viiiifii = Module["dynCall_viiiifii"] = createExportWrapper("dynCall_viiiifii");
 
 /** @type {function(...*):?} */
 var dynCall_fii = Module["dynCall_fii"] = createExportWrapper("dynCall_fii");
